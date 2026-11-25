@@ -4,7 +4,6 @@ import StudentList from './components/StudentList';
 
 function App() {
   return (
-    // Wrap component tree with StudentProvider so any child can useContext(StudentContext)
     <StudentProvider>
       <div className="container">
         <h2>Student Records Management</h2>

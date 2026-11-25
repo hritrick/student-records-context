@@ -2,7 +2,6 @@ import { useState, useContext } from 'react';
 import { StudentContext } from '../context/StudentContext';
 
 export default function StudentForm() {
-  // Consume addStudent from StudentContext
   const { addStudent } = useContext(StudentContext);
 
   const [formData, setFormData] = useState({
@@ -23,8 +22,6 @@ export default function StudentForm() {
     }
 
     addStudent(formData);
-
-    // Reset form after submission
     setFormData({ name: '', rollNo: '', department: '' });
   };
 

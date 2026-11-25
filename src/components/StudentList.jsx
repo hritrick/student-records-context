@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { StudentContext } from '../context/StudentContext';
 
 export default function StudentList() {
-  // Consume students array and removeStudent handler via useContext
   const { students, removeStudent } = useContext(StudentContext);
 
   return (
